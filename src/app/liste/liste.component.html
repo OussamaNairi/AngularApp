@@ -1,0 +1,20 @@
+<table>
+
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Description</th>
+            <th>Quantite</th>
+            <th>Prix</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of produits">
+            <td>{{p.id}}</td>
+            <td>{{p.description}}</td>
+            <td>{{p.quantite}}</td>
+            <td>{{p.prix}}</td>
+            <td><a class="btn btn-danger" (click)="delete(p.id)">Supprimer</a></td>
+        </tr>
+    </tbody>
+</table>

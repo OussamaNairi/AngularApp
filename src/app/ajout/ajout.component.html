@@ -1,0 +1,14 @@
+<h3>Ajouter un produit</h3>
+
+<div>
+
+
+    <label>Description</label>
+    <input class="form-control" type="text" [(ngModel)]="produit.description"/>
+    <label>Quantite</label>
+    <input class="form-control" type="text" [(ngModel)]="produit.quantite"/>
+    <label>Prix</label>
+    <input class="form-control" type="text" [(ngModel)]="produit.prix"/>
+    
+    <input  class="btn btn-primary" type="submit" (click)="saveProduit()"  value="Enregistrer"/>
+</div>
